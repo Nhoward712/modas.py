@@ -56,7 +56,7 @@ class Modas:
         stamp = "{0}".format(t.strftime("%Y-%m-%d"))
         filename = stamp + ".log"
         f = open(filename, "a")
-        f.write("%s,%s,%s,%s" %(t_json,False,rand,r.status_code))
+        f.write("%s,%s,%s,%s\n" %(t_json,False,rand,r.status_code))
         f.close()
         
         print(r.status_code)
